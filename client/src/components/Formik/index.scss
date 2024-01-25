@@ -1,0 +1,17 @@
+.forma{
+    display: flex;
+    justify-content: center;
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input{
+            border-radius: 20px;
+            padding: 10px;
+            border: 1px solid var(--main--color);
+        }
+        .red{
+            color: red;
+        }
+    }
+}

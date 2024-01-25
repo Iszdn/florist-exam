@@ -1,0 +1,30 @@
+#header-sec{
+    // height: 80vh;
+    .slide1{
+        background-image: url("https://preview.colorlib.com/theme/florist/img/hero/hero-1.jpg");
+        padding: 200px 0;
+    }
+    .slide2{
+        background-image: url("https://preview.colorlib.com/theme/florist/img/hero/hero-2.jpg");
+        padding: 200px 0;
+    }
+    .content{
+        h3{
+           margin: 20px 0; 
+        }
+        .butt{
+            display: inline-block;
+            background-color: var(--main--color);
+            padding: 12px 30px;
+            color: white;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+
+        }
+        span{
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }
+}

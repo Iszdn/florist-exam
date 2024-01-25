@@ -1,0 +1,32 @@
+#custom{
+    background-image: url("https://preview.colorlib.com/theme/florist/img/call-bg.jpg");
+    padding: 80px 0;
+    color: white;
+    .content{
+        h4{
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+     .buttons{
+        display: flex;
+        gap: 30px;
+        margin: 20px 0;
+        .but{
+display: inline-block;
+padding: 10px 20px;
+border-radius: 20px;
+cursor: pointer;
+font-weight: 700;
+text-transform: uppercase;
+        }
+        .but1{
+            background-color: var(--main--color);
+        }
+        .but2{
+            background-color:white;
+            color: var(--main--color);
+        }
+     }   
+    }
+}

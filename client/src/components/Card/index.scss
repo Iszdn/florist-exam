@@ -1,0 +1,71 @@
+.card-flo{
+    .sale{
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        padding: 5px 10px;
+
+    }
+   .img{
+    position: relative;
+    overflow: hidden;
+    .icons{
+        position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    left: 20%;
+   
+    transition: .4s;
+        transform: translateY(0px);
+      span{
+        background-color: white;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer; 
+        a{
+            color: inherit;
+        }
+         &:hover {
+    transition: .4s;
+background-color: var(--main--color);
+color: white;  
+ 
+   }
+      }
+    }
+   } 
+   .info{
+    text-align: center;
+    margin: 20px 0;
+    p{
+        font-weight: 700;
+
+    }
+    h6{
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--main--color);
+        display: none;
+        cursor: pointer;
+    }
+   }
+   &:hover .icons{
+    transition: .4s;
+    transform: translateY(-100px);
+    
+   }
+   &:hover p{
+   display: none;
+    
+   }
+   &:hover h6{
+    display: block;
+     
+    }
+  
+
+}

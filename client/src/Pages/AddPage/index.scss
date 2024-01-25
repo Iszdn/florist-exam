@@ -1,0 +1,26 @@
+.add{
+    padding: 100px 0;
+    min-height: 100vh;
+    .filter{
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+        input{
+border: 2px solid var(--main--color);
+border-radius: 20px;
+padding: 10px;
+outline: none;
+        }
+    }
+  .tableee{
+    td{
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        i{
+            cursor: pointer;
+        }
+    }
+  }  
+}
