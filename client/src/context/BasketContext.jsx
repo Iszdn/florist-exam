@@ -7,19 +7,19 @@ export const BasketContext=createContext()
 
 const BasketProvider = ({children}) => {
 const [basket, setbasket] = useLocalStorage("basketlist")
-const subtotal=basket.reduce((initial,product)=>initial+parseInt(product.total),0)
+// const subtotal=basket.reduce((initial,product)=>initial+parseInt(product.total),0)
 
 function addbasket(product) {
     const existBasket=basket.findIndex(x=>x._id===product._id)
     if (existBasket!==-1) {
         basket[existBasket].count++
-        basket[existBasket].total=basket[existBasket].count*basket[existBasket].price
+        // basket[existBasket].total=basket[existBasket].count*basket[existBasket].price
         setbasket([...basket])
         toast.success('Successfully increased basket!');
     }
     else{
-        const total=basket[existBasket].price
-       setbasket([...basket,{...product,count:1,total:total}]) 
+        // const total=basket[existBasket].price
+       setbasket([...basket,{...product,count:1}]) 
        toast.success('Successfully added basket!');
 
     }
@@ -30,7 +30,7 @@ function incbasket(product) {
     const existBasket=basket.findIndex(x=>x._id===product._id)
     if (existBasket!==-1) {
         basket[existBasket].count++
-        basket[existBasket].total=basket[existBasket].count*basket[existBasket].price
+        // basket[existBasket].total=basket[existBasket].count*basket[existBasket].price
         setbasket([...basket])
         toast.success('Successfully increased basket!');
     }
@@ -44,7 +44,7 @@ function decbasket(product) {
             return deletebasket(product)
         }
         basket[existBasket].count--
-        basket[existBasket].total=basket[existBasket].count*basket[existBasket].price
+        // basket[existBasket].total=basket[existBasket].count*basket[existBasket].price
         setbasket([...basket])
         toast.success('Successfully increased basket!');
     }
@@ -60,7 +60,7 @@ function deletebasket(product) {
 }
 
 const data={
-    basket,setbasket,addbasket,deletebasket,incbasket,decbasket,subtotal
+    basket,setbasket,addbasket,deletebasket,incbasket,decbasket
 }
 
   return (

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Basket = () => {
   const {addWish,wish} = useContext(WishlistContext)
-  const {deletebasket,incbasket,decbasket,basket,subtotal} = useContext(BasketContext)
+  const {deletebasket,incbasket,decbasket,basket} = useContext(BasketContext)
   return (
     <>
        <Helmet>
@@ -46,7 +46,7 @@ const Basket = () => {
       <div className="info">
         <h4>{product.title}</h4>
         <h5>${product.price}</h5>
-<h5>total:${product.total}</h5>
+{/* <h5>total:${product.total}</h5> */}
         <div>
           <div onClick={()=>incbasket(product)} className="btn">+</div>
           <div onClick={()=>incbasket(product)} className="btn">{product.count}</div>
@@ -58,7 +58,7 @@ const Basket = () => {
      </div>
       )
     }
-    <p>subtotal:{subtotal}$</p>
+    {/* <p>subtotal:{subtotal}$</p> */}
   </div>
 </div>
         }

@@ -43,7 +43,7 @@ getIdData()
                 
                 
                 </span>
-                <span><i className="fa-regular fa-eye"></i></span>
+                
         </div>
       </div>
       <div className="info">
@@ -57,9 +57,7 @@ getIdData()
            
           </div>
         </div>
-      {/* {
-        data && 
-      } */}
+      
     </div>
     </>
     
